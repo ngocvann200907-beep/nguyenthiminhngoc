@@ -34,7 +34,7 @@ const ExportPDF = () => {
           <h1 className="text-4xl font-bold mb-4 text-blue-600">PORTFOLIO KỸ NĂNG SỐ</h1>
           <h2 className="text-2xl mb-8">Và Ứng dụng AI trong Học tập</h2>
           <div className="w-32 h-1 bg-blue-600 mb-8"></div>
-          <p className="text-xl font-semibold mb-2">Nguyễn Văn A</p>
+          <p className="text-xl font-semibold mb-2">Nguyễn Thị Minh Ngọc</p>
           <p className="text-gray-600 mb-1">Sinh viên ngành Công nghệ Thông tin</p>
           <p className="text-gray-600 mb-8">Trường Đại học ABC</p>
           <p className="text-sm text-gray-500">Học kỳ 1 - Năm học 2024-2025</p>
@@ -286,7 +286,7 @@ const ExportPDF = () => {
 
           <div className="mt-12 pt-8 border-t text-center text-gray-500 text-sm">
             <p>Portfolio Kỹ năng số và Ứng dụng AI</p>
-            <p>© 2024 - Nguyễn Văn A</p>
+            <p>© 2024 - Nguyễn Thị Minh Ngọc</p>
           </div>
         </div>
       </div>

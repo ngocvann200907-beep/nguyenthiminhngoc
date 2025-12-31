@@ -29,7 +29,7 @@ const Index = () => {
             </span>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-slide-up leading-tight">
               Xin chào, tôi là{" "}
-              <span className="text-accent">Nguyễn Văn A</span>
+              <span className="text-accent">Nguyễn Thị Minh Ngọc</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in stagger-2 max-w-2xl mx-auto">
               Sinh viên ngành Công nghệ Thông tin, đam mê khám phá công nghệ số
