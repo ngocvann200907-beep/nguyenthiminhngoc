@@ -39,8 +39,7 @@ export const projects: Project[] = [
     results:
       "Hệ thống thư mục gọn gàng, dễ tìm kiếm tài liệu, tiết kiệm thời gian 30% khi làm bài tập.",
     images: [
-      { src: "/placeholder.svg", caption: "Cấu trúc thư mục theo môn học" },
-      { src: "/placeholder.svg", caption: "Quy ước đặt tên tệp" },
+      { src: "/src/assets/evidence/google-drive.jpeg", caption: "Tạo thư mục trên Google Drive để lưu trữ tài liệu" },
     ],
   },
   {
@@ -63,8 +62,7 @@ export const projects: Project[] = [
     results:
       "Thu thập được 15+ tài liệu chất lượng cao, xây dựng được thư viện tham khảo cá nhân.",
     images: [
-      { src: "/placeholder.svg", caption: "Kết quả tìm kiếm Google Scholar" },
-      { src: "/placeholder.svg", caption: "Thư viện tài liệu Zotero" },
+      { src: "/src/assets/evidence/google-docs-report.jpeg", caption: "Báo cáo nghiên cứu khoa học trên Google Docs" },
     ],
   },
   {
@@ -111,8 +109,9 @@ export const projects: Project[] = [
     results:
       "Hoàn thành dự án đúng hạn, tất cả thành viên nắm rõ tiến độ và trách nhiệm của mình.",
     images: [
-      { src: "/placeholder.svg", caption: "Kanban board trên Notion" },
-      { src: "/placeholder.svg", caption: "Phân công nhiệm vụ nhóm" },
+      { src: "/src/assets/evidence/trello-progress.jpeg", caption: "Tiến độ làm việc trên Trello" },
+      { src: "/src/assets/evidence/trello-final.jpeg", caption: "Bản Final hoàn thiện trên Trello" },
+      { src: "/src/assets/evidence/microsoft-teams.jpeg", caption: "Giao tiếp nhóm qua Microsoft Teams" },
     ],
   },
   {
