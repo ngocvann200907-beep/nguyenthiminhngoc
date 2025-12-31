@@ -1,3 +1,8 @@
+export interface ProjectImage {
+  src: string;
+  caption: string;
+}
+
 export interface Project {
   id: string;
   number: string;
@@ -9,7 +14,7 @@ export interface Project {
   tags: string[];
   challenges?: string;
   results?: string;
-  images?: string[];
+  images?: ProjectImage[];
   links?: { label: string; url: string }[];
 }
 
@@ -33,6 +38,10 @@ export const projects: Project[] = [
       "Ban đầu gặp khó khăn trong việc duy trì tính nhất quán khi đặt tên tệp. Đã khắc phục bằng cách tạo template đặt tên và checklist kiểm tra.",
     results:
       "Hệ thống thư mục gọn gàng, dễ tìm kiếm tài liệu, tiết kiệm thời gian 30% khi làm bài tập.",
+    images: [
+      { src: "/placeholder.svg", caption: "Cấu trúc thư mục theo môn học" },
+      { src: "/placeholder.svg", caption: "Quy ước đặt tên tệp" },
+    ],
   },
   {
     id: "academic-search",
@@ -53,6 +62,10 @@ export const projects: Project[] = [
       "Khó phân biệt nguồn đáng tin cậy trong số lượng lớn kết quả. Đã học cách kiểm tra h-index, số trích dẫn và uy tín tạp chí.",
     results:
       "Thu thập được 15+ tài liệu chất lượng cao, xây dựng được thư viện tham khảo cá nhân.",
+    images: [
+      { src: "/placeholder.svg", caption: "Kết quả tìm kiếm Google Scholar" },
+      { src: "/placeholder.svg", caption: "Thư viện tài liệu Zotero" },
+    ],
   },
   {
     id: "effective-prompts",
@@ -73,6 +86,10 @@ export const projects: Project[] = [
       "Prompt quá dài có thể gây confusion cho AI. Cần cân bằng giữa chi tiết và súc tích.",
     results:
       "Output từ prompt cải tiến rõ ràng hơn 80%, có cấu trúc và phù hợp với mục đích học tập.",
+    images: [
+      { src: "/placeholder.svg", caption: "Prompt v1 đơn giản" },
+      { src: "/placeholder.svg", caption: "Prompt v2 cải tiến và kết quả" },
+    ],
   },
   {
     id: "online-collaboration",
@@ -93,6 +110,10 @@ export const projects: Project[] = [
       "Timezone khác nhau giữa các thành viên. Giải quyết bằng async communication và documentation rõ ràng.",
     results:
       "Hoàn thành dự án đúng hạn, tất cả thành viên nắm rõ tiến độ và trách nhiệm của mình.",
+    images: [
+      { src: "/placeholder.svg", caption: "Kanban board trên Notion" },
+      { src: "/placeholder.svg", caption: "Phân công nhiệm vụ nhóm" },
+    ],
   },
   {
     id: "ai-content-creation",
@@ -113,6 +134,10 @@ export const projects: Project[] = [
       "AI-generated content cần được fact-check và personalize để phù hợp với mục đích cụ thể.",
     results:
       "Video hoàn chỉnh với chất lượng chuyên nghiệp, tiết kiệm 60% thời gian so với làm thủ công.",
+    images: [
+      { src: "/placeholder.svg", caption: "Kịch bản video từ ChatGPT" },
+      { src: "/placeholder.svg", caption: "Video hoàn chỉnh trên Canva" },
+    ],
   },
   {
     id: "responsible-ai",
@@ -133,5 +158,9 @@ export const projects: Project[] = [
       "Ranh giới giữa hỗ trợ học tập và gian lận còn mờ nhạt. Cần định nghĩa rõ ràng từng trường hợp.",
     results:
       "Bộ 7 nguyên tắc sử dụng AI có trách nhiệm, được áp dụng trong suốt quá trình học tập.",
+    images: [
+      { src: "/placeholder.svg", caption: "Nghiên cứu chính sách AI của các trường" },
+      { src: "/placeholder.svg", caption: "Bộ 7 nguyên tắc sử dụng AI" },
+    ],
   },
 ];

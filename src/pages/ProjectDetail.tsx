@@ -161,27 +161,30 @@ const ProjectDetail = () => {
                 </div>
               )}
 
-              {/* Evidence placeholder */}
-              <div className="bg-card p-6 md:p-8 rounded-xl shadow-md border-2 border-dashed border-border">
-                <h2 className="font-heading text-xl font-semibold text-foreground mb-4">
-                  Minh chứng sản phẩm
-                </h2>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="aspect-video bg-secondary rounded-lg flex items-center justify-center">
-                    <span className="text-muted-foreground text-sm">
-                      Ảnh minh chứng 1
-                    </span>
-                  </div>
-                  <div className="aspect-video bg-secondary rounded-lg flex items-center justify-center">
-                    <span className="text-muted-foreground text-sm">
-                      Ảnh minh chứng 2
-                    </span>
+              {/* Evidence Images */}
+              {project.images && project.images.length > 0 && (
+                <div className="bg-card p-6 md:p-8 rounded-xl shadow-md animate-fade-in">
+                  <h2 className="font-heading text-xl font-semibold text-foreground mb-6">
+                    Minh chứng sản phẩm
+                  </h2>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    {project.images.map((image, index) => (
+                      <div key={index} className="group">
+                        <div className="aspect-video bg-secondary rounded-lg overflow-hidden border border-border">
+                          <img
+                            src={image.src}
+                            alt={image.caption}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                        <p className="text-muted-foreground text-sm mt-2 text-center">
+                          {image.caption}
+                        </p>
+                      </div>
+                    ))}
                   </div>
                 </div>
-                <p className="text-muted-foreground text-sm mt-4 italic">
-                  * Thêm ảnh chụp màn hình, file, hoặc link minh chứng tại đây
-                </p>
-              </div>
+              )}
 
               {/* Links */}
               {project.links && project.links.length > 0 && (
