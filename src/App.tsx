@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Projects from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail";
 import Conclusion from "./pages/Conclusion";
+import ExportPDF from "./pages/ExportPDF";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:id" element={<ProjectDetail />} />
           <Route path="/conclusion" element={<Conclusion />} />
+          <Route path="/export-pdf" element={<ExportPDF />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
