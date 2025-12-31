@@ -6,59 +6,60 @@
 
 @layer base {
   :root {
-    --background: 45 30% 97%;
-    --foreground: 222 47% 11%;
+    --background: 210 40% 98%;
+    --foreground: 215 50% 15%;
 
-    --card: 45 40% 95%;
-    --card-foreground: 222 47% 11%;
+    --card: 210 35% 96%;
+    --card-foreground: 215 50% 15%;
 
-    --popover: 45 30% 97%;
-    --popover-foreground: 222 47% 11%;
+    --popover: 210 40% 98%;
+    --popover-foreground: 215 50% 15%;
 
-    --primary: 222 47% 20%;
-    --primary-foreground: 45 30% 97%;
+    --primary: 210 85% 45%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 45 25% 90%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 210 30% 92%;
+    --secondary-foreground: 215 50% 15%;
 
-    --muted: 45 20% 92%;
-    --muted-foreground: 222 20% 45%;
+    --muted: 210 25% 93%;
+    --muted-foreground: 215 25% 45%;
 
-    --accent: 35 80% 55%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 200 95% 50%;
+    --accent-foreground: 215 50% 15%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 45 20% 85%;
-    --input: 45 20% 85%;
-    --ring: 222 47% 20%;
+    --border: 210 25% 88%;
+    --input: 210 25% 88%;
+    --ring: 210 85% 45%;
 
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --gold: 35 80% 55%;
-    --gold-light: 40 70% 75%;
-    --navy: 222 47% 20%;
-    --navy-light: 222 30% 35%;
-    --cream: 45 30% 97%;
-    --cream-dark: 45 25% 90%;
+    --blue: 210 85% 45%;
+    --blue-light: 200 80% 60%;
+    --blue-dark: 215 75% 35%;
+    --sky: 200 95% 50%;
+    --navy: 215 50% 15%;
+    --ice: 210 40% 98%;
+    --ice-dark: 210 30% 92%;
 
     /* Typography */
     --font-heading: 'Playfair Display', Georgia, serif;
     --font-body: 'Source Sans 3', system-ui, sans-serif;
 
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(222 47% 11% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(222 47% 11% / 0.07), 0 2px 4px -2px hsl(222 47% 11% / 0.05);
-    --shadow-lg: 0 10px 15px -3px hsl(222 47% 11% / 0.08), 0 4px 6px -4px hsl(222 47% 11% / 0.05);
-    --shadow-xl: 0 20px 25px -5px hsl(222 47% 11% / 0.1), 0 8px 10px -6px hsl(222 47% 11% / 0.05);
-    --shadow-glow: 0 0 40px hsl(35 80% 55% / 0.15);
+    --shadow-sm: 0 1px 2px 0 hsl(215 50% 15% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(215 50% 15% / 0.07), 0 2px 4px -2px hsl(215 50% 15% / 0.05);
+    --shadow-lg: 0 10px 15px -3px hsl(215 50% 15% / 0.08), 0 4px 6px -4px hsl(215 50% 15% / 0.05);
+    --shadow-xl: 0 20px 25px -5px hsl(215 50% 15% / 0.1), 0 8px 10px -6px hsl(215 50% 15% / 0.05);
+    --shadow-glow: 0 0 40px hsl(210 85% 45% / 0.2);
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(45 30% 97%) 0%, hsl(45 40% 93%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(35 80% 55%) 0%, hsl(40 70% 60%) 100%);
-    --gradient-navy: linear-gradient(135deg, hsl(222 47% 20%) 0%, hsl(222 30% 30%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(210 40% 98%) 0%, hsl(210 50% 94%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(210 85% 45%) 0%, hsl(200 95% 50%) 100%);
+    --gradient-navy: linear-gradient(135deg, hsl(215 50% 15%) 0%, hsl(215 60% 25%) 100%);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -66,37 +67,39 @@
   }
 
   .dark {
-    --background: 222 47% 8%;
-    --foreground: 45 30% 95%;
+    --background: 215 50% 8%;
+    --foreground: 210 30% 95%;
 
-    --card: 222 40% 12%;
-    --card-foreground: 45 30% 95%;
+    --card: 215 45% 12%;
+    --card-foreground: 210 30% 95%;
 
-    --popover: 222 47% 8%;
-    --popover-foreground: 45 30% 95%;
+    --popover: 215 50% 8%;
+    --popover-foreground: 210 30% 95%;
 
-    --primary: 45 40% 90%;
-    --primary-foreground: 222 47% 11%;
+    --primary: 200 90% 55%;
+    --primary-foreground: 215 50% 8%;
 
-    --secondary: 222 30% 18%;
-    --secondary-foreground: 45 30% 95%;
+    --secondary: 215 35% 18%;
+    --secondary-foreground: 210 30% 95%;
 
-    --muted: 222 30% 18%;
-    --muted-foreground: 45 20% 65%;
+    --muted: 215 35% 18%;
+    --muted-foreground: 210 25% 65%;
 
-    --accent: 35 80% 55%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 200 95% 50%;
+    --accent-foreground: 215 50% 8%;
 
     --destructive: 0 62% 30%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 222 30% 20%;
-    --input: 222 30% 20%;
-    --ring: 45 40% 90%;
+    --border: 215 35% 20%;
+    --input: 215 35% 20%;
+    --ring: 200 90% 55%;
 
-    --navy: 45 40% 90%;
-    --cream: 222 47% 8%;
-    --cream-dark: 222 40% 12%;
+    --blue: 200 90% 55%;
+    --blue-light: 200 80% 70%;
+    --navy: 210 30% 95%;
+    --ice: 215 50% 8%;
+    --ice-dark: 215 45% 12%;
   }
 }
 
